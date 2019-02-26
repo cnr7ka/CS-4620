@@ -1,0 +1,10 @@
+<div class="jumbotron">
+  <h3>Create Skill</h3>
+
+  <form method='POST' action='.'>
+    {% csrf_token %}
+    New Skill
+    {{form.name}}
+    {{form.name.errors}}
+    <input type='submit' class="btn btn-primary" value="Create">
+    </form>
