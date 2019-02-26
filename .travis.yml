@@ -3,9 +3,7 @@ language: python
 python:
   - "3.5.1"
 install:
-  - pip install django==2.1
-  - pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-  - pip install oauth2client
+  - pip install -r requirements.txt
 
 
 script: python3 manage.py test
